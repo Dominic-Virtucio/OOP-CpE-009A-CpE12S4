@@ -25,13 +25,17 @@ def main():
     convert = CelsiusToFahrenheit(tempInCelsius)
     print(str(convert.conversion()) + " Fahrenheit")
 
+
     tempInFahrenheit = float(input("Enter the temperature in Fahrenheit: "))
     convert = FahrenheitToCelsius(tempInFahrenheit)
     print(str(convert.conversion()) + " Celsius")
+    convert = CelsiusToKelvin(tempInCelsius)
+    print(str(convert.conversion()) + " Kelvin")
 
     tempInKelvin = float(input("Enter the temperature in Kelvin: "))
     convert = KelvinToCelsius(tempInKelvin)
     print(str(convert.conversion()) + " Celsius")
-
+    convert = CelsiusToFahrenheit(tempInCelsius)
+    print(str(convert.conversion()) + " Fahrenheit")
 
 main()
